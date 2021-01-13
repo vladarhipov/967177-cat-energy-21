@@ -1,0 +1,60 @@
+.primary-button {
+  background-color: @primary;
+  color: #ffffff;
+  .oswald-regular ();
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+  border: 0;
+  padding: 10px;
+  min-height: 40px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.primary-button_index-page {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.primary-button_form-page {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.primary-button:hover {
+  background-color: #5eaa2f;
+}
+
+.primary-button:active {
+  color: rgba(255,255,255,0.3);
+}
+
+.primary-button_gray {
+  color: @black-4;
+  background-color: @bg-gray;
+}
+
+.primary-button_gray:hover {
+  background-color: @gray-eb;
+}
+
+.primary-button_gray:active {
+  color: rgba(68,68,68,0.3);
+}
+
+@media (min-width: @tablet-width) {
+  .primary-button_index-page {
+    font-size: 20px;
+    line-height: 20px;
+    min-height: 54px;
+    padding: 16px 26px 13px;
+  }
+
+  .primary-button_form-page {
+    font-size: 20px;
+    line-height: 0;
+    min-height: 52px;
+  }
+}

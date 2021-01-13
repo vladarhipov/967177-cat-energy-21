@@ -1,12 +1,244 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Кэт энерджи</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Функциональное питание для котов CAT ENERGY</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" />
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font" />
+    <!-- <link href="https://fonts.googleapis.com/css?family=Oswald:400,500&display=swap&subset=cyrillic" rel="stylesheet"> -->
   </head>
   <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+    <div style="display:none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
+
+    <header class="page-header_index-page">
+      <div class="content-container">
+        <div class="page-header__wrapper">
+          <div class="page-header__logo-menu-button-wrapper"
+            <a class="page-header__logo-link">
+              <picture>
+                <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg" width="202" height="60">
+                <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" width="173" height="58">
+                <img class="page-header__logo-picture" src="img/logo-mobile.svg" width="191" height="38" alt="Логотип интернет-магазина CAT ENERGY">
+              </picture>
+            </a>
+            <button class="page-header__menu-button visually-hidden" type="button">
+              <span class="visually-hidden">Открыть меню</span>
+            </button>
+          </div>
+          <nav class="page-header__main-nav">
+            <ul class="page-header__site-list">
+              <li class="page-header__site-item"><a class="page-header__link_index-page page-header__link-index-page_active">Главная</a></li>
+              <li class="page-header__site-item"><a href="catalog.html" class="page-header__link_index-page">Каталог продукции</a></li>
+              <li class="page-header__site-item"><a href="form.html" class="page-header__link_index-page">Подбор программы</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="first-screen">
+        <div class="content-container">
+          <div class="first-screen__text-wrapper">
+            <h1 class="first-screen__title">Функциональное питание для котов</h1>
+            <p class="first-screen__slogan">Занялся собой? Займись котом!</p>
+            <a href="form.html" class="primary-button primary-button_index-page first-screen__primary-button">Подобрать программу</a>
+          </div>
+          <picture>
+            <source type="image/webp" media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.webp 1x, img/index-can-desktop@2x.webp 2x" width="552" height="499">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/index-can-tablet@1x.webp 1x, img/index-can-tablet@2x.webp 2x" width="709" height="609">
+            <source type="image/webp" srcset="img/index-can-mobile@1x.webp 1x, img/index-can-mobile@2x.webp 2x" width="280" height="271">
+
+            <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x" width="552" height="499">
+            <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x" width="709" height="609">
+            <img class="first-screen__product-illustration" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" alt="CAT ENERGY с курицей" width="280" height="271">
+          </picture>
+        </div>
+      </section>
+
+      <section class="categories-review">
+        <div class="content-container">
+          <h2 class="visually-hidden">Категории каталога</h2>
+          <ul class="categories-review__list">
+            <li class="categories-review__item">
+              <h3 class="categories-review__title categories-review__slim-icon">Похудениe</h3>
+              <p class="categories-review__description categories-review__description_slim">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+              <a href="/catalog/slim/" class="categories-review__catalog-link">Каталог SLIM</a>
+            </li>
+            <li class="categories-review__item">
+              <h3 class="categories-review__title categories-review__pro-icon">Набор массы</h3>
+              <p class="categories-review__description categories-review__description_pro">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+              <a href="/catalog/pro/" class="categories-review__catalog-link">Каталог PRO</a>
+            </li>
+          </ul>
+      </div>
+      </section>
+
+      <section class="advantages">
+        <div class="content-container">
+          <h2 class="advantages__title">Как это работает</h2>
+          <ul class="advantages__list">
+            <li class="advantages__item advantages__item-icon-nutritional">
+              <p class="advantages__description">Функциональное питание содержит только полезные питательные вещества.</p>
+            </li>
+            <li class="advantages__item advantages__item-icon-flour">
+              <p class="advantages__description">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
+            </li>
+            <li class="advantages__item advantages__item-icon-swap">
+              <p class="advantages__description">Замените один-два приема обычной еды на наше функциональное питание.</p>
+            </li>
+            <li class="advantages__item advantages__item-icon-time">
+              <p class="advantages__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="live-example">
+        <div class="content-container">
+          <div class="live-example__columns">
+            <div class="live-example__first-column-wrapper">
+              <h2 class="live-example__title">Живой пример</h2>
+              <p class="live-example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по&#8209;прежнему спит по 16 часов в день. </p>
+              <div class="live-example__facts--price-wrapper">
+                <ul class="live-example__facts">
+                  <li class="live-example__fact">
+                    <span class="live-example__fact-thesis">5 кг</span>
+                    <span class="live-example__fact-description">снижение веса</span>
+                  </li>
+                  <li class="live-example__fact live-example__fact-days">
+                    <span class="live-example__fact-thesis">60 дней</span>
+                    <span class="live-example__fact-description live-example__fact-days">затрачено времени</span>
+                  </li>
+                </ul>
+                <div class="live-example__price-block">
+                  <span class="live-example__price-caption">Затраты на питание: </span>
+                  <span class="live-example__price"> 15 000 руб.</span>
+                </div>
+              </div>
+            </div>
+            <div class="live-example__before-after-slider">
+              <div class="live-example__before-after-images">
+                <div class="live-example__before-mask">
+                  <div class="live-example__after-mask-2">
+                    <img src="img/before-desktop@1x.png" alt="Фото Бориса до" class="live-example__before-image" width="690" height="517">
+                  </div>
+                </div>
+                <div class="live-example__after-mask">
+                  <div class="live-example__after-mask-2">
+                    <img src="img/after-desktop@1x.png" alt="Фото Бориса после" class="live-example__after-image" width="690" height="517">
+                  </div>
+                </div>
+              </div>
+              <div class="live-example__before-after-controls">
+                <button type="button" name="button" class="live-example__before-after-button">Было</button>
+                <div class="live-example__before-after-progress-bar">
+                  <button type="button" name="button" class="live-example__drag-control">
+                    <span class="visually-hidden">Тяните</span>
+                  </button>
+                </div>
+                <button type="button" name="button" class="live-example__before-after-button">Стало</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="map_index">
+        <div class="content-container">
+          <div class="map__contact-info">
+            <h2 class="visually-hidden">Контакты</h2>
+            <h3 class="map__title">Приглашаем <br>к сотрудничеству <br>дилеров!</h3>
+            <p class="map__address">ул. Большая <br>Конюшенная, д. 19/8<br><span class="map__city"> Санкт-Петербург</p>
+          </div>
+        </div>
+        <div id="map-desktop"></div>
+        <div id="map-mobile"></div>
+      </section>
+
+    </main>
+
+    <footer class="page-footer">
+      <div class="content-container">
+        <div class="page-footer__flex-wrapper">
+          <div class="page-footer__logo-wrapper">
+            <a class="page-footer__logo">
+              <img class="page-footer__logo-img" src="img/logo-footer.svg" width="128" height="24" alt="Логотип интернет-магазина CAT ENERGY">
+            </a>
+          </div>
+
+          <ul class="social page-footer__social">
+            <li class="social__item">
+              <a href="#" class="social__link page-footer__link-vkontakte">
+                <span class="visually-hidden">Вконтакте</span>
+                <svg class="social__svg" width="22" height="12"><use xlink:href="#vkontakte"></use></svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link page-footer__link-instagram">
+                <span class="visually-hidden">Инстаграм</span>
+                <svg class="social__svg" width="16" height="16"><use xlink:href="#instagram"></use></svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link page-footer__link-facebook">
+                <span class="visually-hidden">Фейсбук</span>
+                <svg class="social__svg" width="10" height="19"><use xlink:href="#facebook"></use></svg>
+              </a>
+            </li>
+          </ul>
+
+          <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__copyright-wrapper">
+            <span class="page-footer__developer-name">HTML Academy</span>
+            <svg class="page-footer__developer-logo" width="27" height="34"><use xlink:href="#developer-logo"></use></svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/page-header.js"></script>
+    <script>
+      // Picture element HTML5 shiv
+      document.createElement( "picture" );
+    </script>
+    <script src="js/picturefill.js" async></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1N7DfHC7adSmpylXujMj1BBJPUYyXR9w&callback=initMap" async defer></script>
+    <script>
+      function initMap() {
+        var mapMobile = new google.maps.Map(document.getElementById('map-mobile'), {
+          center: {lat: 59.938797, lng: 30.323086},
+          zoom: 17,
+          disableDefaultUI: true
+        });
+
+        var bigImage = 'img/map-pin.png';
+        var smallMarker = new google.maps.Marker({
+          position: {lat: 59.938797, lng: 30.323086},
+          map: mapMobile,
+          icon: bigImage
+        });
+
+        var mapDesktop = new google.maps.Map(document.getElementById('map-desktop'), {
+          center: {lat: 59.939134, lng: 30.319854},
+          zoom: 17,
+          disableDefaultUI: true
+        });
+
+        var smallImage = 'img/map-pin.png';
+        var bigMarker = new google.maps.Marker({
+          position: {lat: 59.938797, lng: 30.323086},
+          map: mapDesktop,
+          icon: smallImage
+        });
+
+      }
+    </script>
 
   </body>
 </html>

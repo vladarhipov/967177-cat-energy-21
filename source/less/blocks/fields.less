@@ -1,0 +1,147 @@
+.field__wrapper {
+  display: flex;
+  align-items: flex-start;
+}
+
+.field__name {
+  margin-top: 15px;
+  margin-right: 16px;
+  .oswald-regular ();
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.field__name_phone-email {
+  margin-top: 10px;
+  margin-right: 12px;
+}
+
+.field {
+  border: 1px solid @line-gray-lighter;
+  padding: 12px 15px;
+  color: @black-4;
+  text-transform: uppercase;
+}
+
+.field:hover {
+  border-color: @line-gray-darker;
+}
+
+.field::placeholder {
+  color: @black-4;
+}
+
+.field:not(:placeholder-shown) {
+  border-color: @error;
+  border-width: 2px;
+  outline: none;
+}
+
+.field__input_email:not(:placeholder-shown) {
+  background-image: url("../img/icon-mail-error.svg");
+}
+
+.field:disabled {
+  background-color: white;
+  border-color: @black-4;
+  box-shadow: inset 0 0 0 1px @black-4;
+  outline: none;
+}
+
+.field__email-icon:disabled {
+  background-image: url("../img/icon-mail-disabled.svg");
+}
+
+.field__phone-icon:disabled {
+  background-image: url("../img/icon-phone-disabled.svg");
+}
+
+.field:valid {
+  border-color: @line-gray-lighter;
+  border-width: 1px;
+}
+
+.field__input {
+  flex-grow: 1;
+  height: 45px;
+  .oswald-regular ();
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.field__with-icon {
+  border: 1px solid @line-gray-darker;
+  padding-right: 50px;
+  background-repeat: no-repeat;
+}
+
+.field__with-icon:hover {
+  border-color: @line-gray-darker;
+}
+
+.field__email-icon {
+  background-image: url("../img/icon-mail.svg");
+  background-size: 19px 14px;
+  background-position: right 15px top 15px;
+}
+
+
+.field__phone-icon {
+  background-image: url("../img/icon-phone.svg");
+  background-size: 21px 21px;
+  background-position: right 12px top 13px;
+}
+
+.field:focus {
+  border-color: @black-4;
+  box-shadow: inset 0 0 0 1px @black-4;
+  outline: none;
+}
+
+.field__textarea {
+  flex-grow: 1;
+  height: 150px;
+  .oswald-regular ();
+  font-size: 16px;
+  line-height: 18px;
+}
+
+@media (min-width: @tablet-width) {
+  .field {
+    padding: 10px 18px;
+  }
+
+  .field__name {
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 12px;
+  }
+
+  .field__input {
+    height: 52px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .field__email-icon {
+    padding-right: 60px;
+    background-size: 18px 13px;
+    background-position: right 19px top 19px;
+  }
+
+  .field__phone-icon {
+    padding-right: 60px;
+    background-position: right 17px top 15px;
+  }
+
+  .field__textarea {
+    height: 174px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+
+}
