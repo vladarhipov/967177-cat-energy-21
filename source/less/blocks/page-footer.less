@@ -1,0 +1,143 @@
+.page-footer {
+  margin-top: auto;
+  background-color: @bg-gray;
+}
+
+.page-footer__flex-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.page-footer__logo-wrapper {
+  padding-top: 40px;
+  padding-bottom: 26px;
+  border-bottom: 1px solid @line-gray;
+  text-align: center;
+}
+
+.page-footer__logo {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.page-footer__logo:hover {
+  opacity: 80%;
+}
+
+.page-footer__logo:active {
+  opacity: 60%;
+}
+
+.page-footer__logo-img {
+  width: 128px;
+  height: 24px;
+}
+
+.page-footer__social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid @line-gray;
+  padding-top: 23px;
+  padding-bottom: 16px;
+  margin-left: -3px;
+}
+
+.page-footer__copyright-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 18px;
+  padding-bottom: 20px;
+  text-decoration: none;
+}
+
+.page-footer__developer-name {
+  font-size: 16px;
+  line-height: 24px;
+  color: @black-4;
+  margin-top: 11px;
+  margin-bottom: 1em;
+}
+
+.page-footer__developer-logo {
+  fill: @black-6;
+  width: 27px;
+  height: 34px;
+}
+
+.page-footer__copyright-wrapper:hover .page-footer__developer-logo {
+  fill: @primary;
+}
+
+.page-footer__copyright-wrapper:active {
+  opacity: 30%;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer {
+    padding-top: 16px;
+    padding-bottom: 36px;
+  }
+
+  .page-footer__flex-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .page-footer__logo-wrapper {
+    display: inline-block;
+    border: none;
+    margin-right: auto;
+    margin-left: 0;
+  }
+
+  .page-footer__social {
+    width: 200px;
+    border: none;
+  }
+
+  .social__svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  .page-footer__link-vkontakte {
+    width: 30px;
+    height: 16px;
+  }
+
+  .page-footer__link-instagram {
+    width: 23px;
+    height: 23px;
+  }
+
+  .page-footer__link-facebook {
+    width: 14px;
+    height: 28px;
+  }
+
+  .page-footer__copyright-wrapper {
+    padding-top: 28px;
+    margin-left: auto;
+    margin-right: 0;
+    align-items: center;
+  }
+
+  .page-footer__developer-logo {
+    margin-left: 23px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer {
+    padding-top: 23px;
+    padding-bottom: 27px;
+  }
+
+  .page-footer__social {
+    margin-left: 10px;
+  }
+}

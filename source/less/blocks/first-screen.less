@@ -1,0 +1,156 @@
+.first-screen {
+  position: relative;
+  padding-top: 1px;
+  padding-bottom: 45px;
+  background-image: url("../img/index-background-mobile@1x.jpg"), linear-gradient(#63a73a 302px, #ffffff 302px);
+  background-size: 320px 302px, contain;
+  background-position: top left, 0 0;
+  background-repeat: no-repeat;
+  background-color: @primary;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+  }
+}
+
+.first-screen__title {
+  .oswald-regular ();
+  font-size: 36px;
+  line-height: 36px;
+  color: white;
+  text-align: center;
+  margin-top: 26px;
+  margin-bottom: 24px;
+}
+
+.first-screen__slogan {
+  .oswald-regular ();
+  font-size: 14px;
+  line-height: 14px;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.first-screen__primary-button {
+  position: absolute;
+  width: calc(100% - 40px);
+  bottom: 22px;
+  left: 20px;
+}
+
+.first-screen__product-illustration {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  width: 280px;
+  height: 271px;
+}
+
+@media (min-width: @tablet-width) {
+  .first-screen {
+    background: #ffffff;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .first-screen__text-wrapper {
+    margin-top: 42px;
+    padding-left: 88px;
+    position: relative;
+    z-index: 1;
+  }
+
+
+  .first-screen__title {
+    font-size: 60px;
+    line-height: 60px;
+    max-width: 420px;
+    margin-bottom: 40px;
+    color: @black-1;
+    text-align: left;
+  }
+
+  .first-screen__slogan {
+    font-size: 20px;
+    line-height: 20px;
+    max-width: 420px;
+    margin-bottom: 50px;
+    color: @black-1;
+    text-align: left;
+  }
+
+  .first-screen__primary-button {
+    position: inherit;
+    width: auto;
+    z-index: 1;
+    display: inline-block;
+    bottom: 0;
+    left: -5px;
+  }
+
+  .first-screen__product-illustration {
+    z-index: 0;
+    position: relative;
+    margin-top: -83px;
+    margin-bottom: 0;
+    width: 709px;
+    height: 609px;
+    margin-left: auto;
+    margin-right: 0;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .first-screen {
+    position: relative;
+    padding-top: 181px;
+    padding-bottom: 185px;
+    margin-bottom: 80px;
+  }
+
+  .first-screen::after {
+    position: absolute;
+    z-index: 0;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-image: url("../img/index-background-desktop@1x.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left top;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/index-background-desktop@2x.jpg");
+    }
+  }
+
+  .first-screen__text-wrapper {
+    padding-left: 80px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .first-screen__slogan {
+    text-align: left;
+    margin-bottom: 52px;
+  }
+
+  .first-screen__product-illustration {
+    position: absolute;
+    z-index: 1;
+    width: 552px;
+    height: 499px;
+    top: 224px;
+    left: calc(50% - 160px);
+  }
+
+  .first-screen__primary-button {
+    margin-left: 4px;
+  }
+}
