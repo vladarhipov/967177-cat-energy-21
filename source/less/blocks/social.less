@@ -1,0 +1,42 @@
+.social {
+  display: flex;
+  align-content: center;
+  list-style: none;
+  margin: 0;
+}
+
+.social__item {
+  margin-left: 40px;
+
+  &:first-child {
+    margin-left: -40px;
+  }
+}
+
+.social__link {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.social__svg {
+  fill: @black-6;
+}
+
+.social__svg:hover {
+  fill: @primary;
+}
+
+.social__svg:active {
+  opacity: 30%;
+}
+
+
+@media (min-width: @tablet-width) {
+  .social__item {
+    margin-left: 30px;
+
+    &:first-child {
+      margin-left: -30px;
+    }
+  }
+}

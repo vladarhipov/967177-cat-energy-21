@@ -1,7 +1,7 @@
-# Личный проект «Кэт энерджи» [![Check status][check-image]][check-url]
+# Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Vlad Arkhipov](https://up.htmlacademy.ru/adaptive/21/user/967177).
-* Наставник: `Неизвестно`.
+* Студент: [Vlad V. Arkhipov](https://up.htmlacademy.ru/adaptive/17/user/967177).
+* Наставник: [Егор Глебов](https://htmlacademy.ru/profile/id212499).
 
 ---
 
@@ -24,7 +24,7 @@ _`.editorconfig`, `.gitattributes`, `.gitignore`, `.stylelintrc`, `.travis.yml`,
 
 #### 2. Создайте форк
 
-[Откройте мастер-репозиторий](https://github.com/htmlacademy-adaptive/967177-cat-energy-21) и нажмите кнопку «Fork» в правом верхнем углу. Репозиторий из Академии будет скопирован в ваш аккаунт.
+[Откройте мастер-репозиторий](https://github.com/htmlacademy-adaptive/967177-cat-energy-17) и нажмите кнопку «Fork» в правом верхнем углу. Репозиторий из Академии будет скопирован в ваш аккаунт.
 
 <img width="800" alt="" src="https://user-images.githubusercontent.com/10909/60808133-3a7ace00-a190-11e9-9d29-401b02036a9c.jpg">
 
@@ -52,7 +52,9 @@ git clone SSH-адрес_вашего_форка
 
 <a href="https://htmlacademy.ru/intensive/adaptive"><img align="left" width="50" height="50" alt="HTML Academy" src="https://up.htmlacademy.ru/static/img/intensive/adaptive/logo-for-github-2.png"></a>
 
-Репозиторий создан для обучения на профессиональном онлайн‑курсе «[HTML и CSS. Адаптивная вёрстка и автоматизация](https://htmlacademy.ru/intensive/adaptive)» от [HTML Academy](https://htmlacademy.ru).
+Репозиторий создан для обучения на профессиональном онлайн‑курсе «[HTML и CSS, уровень 2](https://htmlacademy.ru/intensive/adaptive)» от [HTML Academy](https://htmlacademy.ru).
 
-[check-image]: https://github.com/htmlacademy-adaptive/967177-cat-energy-21/workflows/Project%20check/badge.svg?branch=master
-[check-url]: https://github.com/htmlacademy-adaptive/967177-cat-energy-21/actions
+[travis-image]: https://travis-ci.com/htmlacademy-adaptive/967177-cat-energy-17.svg?branch=master
+[travis-url]: https://travis-ci.com/htmlacademy-adaptive/967177-cat-energy-17
+[dependency-image]: https://david-dm.org/htmlacademy-adaptive/967177-cat-energy-17/dev-status.svg?style=flat-square
+[dependency-url]: https://david-dm.org/htmlacademy-adaptive/967177-cat-energy-17?type=dev

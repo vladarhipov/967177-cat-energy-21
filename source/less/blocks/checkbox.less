@@ -1,0 +1,82 @@
+.checkbox__item input {
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.checkbox__item label {
+  position: relative;
+  display: block;
+  vertical-align: top;
+  cursor: pointer;
+  .oswald-regular ();
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: @black-2;
+  padding-left: 45px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.checkbox__item label::after {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 30px;
+  left: 0;
+  top: 0;
+  border: 1px solid @line-gray-darker;
+}
+
+.checkbox__item input:checked + label::before {
+  position: absolute;
+  content: "";
+  width: 26px;
+  height: 26px;
+  background-image: url("../img/checkbox-tick.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  top: 2px;
+  left: 2px;
+  z-index: 10;
+}
+
+.checkbox__item input:disabled + label {
+  opacity: 0.3;
+}
+
+.checkbox__item label:hover::after {
+  border-color: @gray-ba;
+}
+
+.checkbox__item label:active {
+  opacity: 30%;
+}
+
+.checkbox__item input:focus + label::after {
+  border-color: @black-4;
+  border-width: 2px;
+}
+
+@media (min-width: @tablet-width) {
+  .checkbox__item label {
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 60px;
+    padding-top: 5px;
+    padding-bottom: 6px;
+  }
+
+  .checkbox__item label::after {
+    width: 40px;
+    height: 40px;
+  }
+
+  .checkbox__item input:checked + label::before {
+    width: 18px;
+    height: 18px;
+    top: 11px;
+    left: 11px;
+  }
+}
