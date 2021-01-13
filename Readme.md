@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Check status][check-image]][check-url]
 
 * Студент: [Vlad Arkhipov](https://up.htmlacademy.ru/adaptive/21/user/967177).
-* Наставник: `Неизвестно`.
+* Наставник: `без наставника`.
 
 ---
 
