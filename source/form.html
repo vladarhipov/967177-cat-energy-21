@@ -21,8 +21,8 @@
           <div class="page-header__logo-menu-button-wrapper">
             <a href="/" class="page-header__logo-link">
               <picture>
-                <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg" width="202" height="60">
-                <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" width="173" height="58">
+                <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
                 <img class="page-header__logo-picture" src="img/logo-mobile.svg" width="191" height="38" alt="Логотип интернет-магазина CAT ENERGY">
               </picture>
             </a>
@@ -55,19 +55,19 @@
                 <li class="form__field-item">
                   <label class="field__wrapper">
                     <span class="field__name">Имя:*</span>
-                    <input class="field field__input" name="name" type="name" value placeholder=" " required>
+                    <input class="field field__input" name="name" type="text" placeholder=" " required>
                   </label>
                 </li>
                 <li class="form__field-item">
                   <label class="field__wrapper">
                     <span class="field__name">Вес (кг):*</span>
-                    <input class="field field__input" name="weight" type="" value placeholder=" " required>
+                    <input class="field field__input" name="weight" type="text" placeholder=" " required>
                   </label>
                 </li class="form__field-item">
                 <li>
                   <label class="field__wrapper">
                     <span class="field__name">Возраст (лет):</span>
-                    <input class="field field__input" name="years" type="" value optional>
+                    <input class="field field__input" name="years" type="text">
                   </label>
                 </li>
               </ul>
@@ -77,9 +77,9 @@
             <fieldset class="form__column_half form__fieldset form__goal">
               <legend class="visually-hidden">Цели</legend>
                 <ul class="radio-button">
-                <li><input type="radio" name="goal-group" id="losing-weight-id" value="" checked=""><label for="losing-weight-id">Похудение</label></li>
-                <li><input type="radio" name="goal-group" id="weight-gain-id" value=""><label for="weight-gain-id">Набор массы</label></li>
-                <li><input type="radio" name="goal-group" id="know-nothing-id" value=""><label for="know-nothing-id">Не знаю (нужен ваш совет)</label></li>
+                <li><input type="radio" name="goal-group" id="losing-weight-id" value="losing-weight-on" checked=""><label for="losing-weight-id">Похудение</label></li>
+                <li><input type="radio" name="goal-group" id="weight-gain-id" value="weight-gain-on"><label for="weight-gain-id">Набор массы</label></li>
+                <li><input type="radio" name="goal-group" id="know-nothing-id" value="weight-gain-on"><label for="know-nothing-id">Не знаю (нужен ваш совет)</label></li>
               </ul>
             </fieldset>
           </div>
@@ -110,7 +110,7 @@
             <legend class="form__green-band form__comment-title">
               <span class="form__green-band-inside">Комментарий</span>
             </legend>
-            <label class="field__wrapper"><textarea class="field field__textarea" name="comment" type="" value placeholder="Расскажите обо всех повадках кота"></label>
+            <label class="field__wrapper"><textarea class="field field__textarea" name="comment" placeholder="Расскажите обо всех повадках кота"></label>
           </fieldset>
 
           <fieldset class="form__fieldset form__extra-info">
