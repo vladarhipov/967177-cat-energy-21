@@ -70,6 +70,7 @@ gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2,ttf,eot}",
     "source/img/**",
+    "source/css/style.css",
     "source/js/**"
   ], {
     base: "source"
